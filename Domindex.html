@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Estilo para o título h1 */
+      #titulo {
+        font-family: 'Arial', sans-serif;
+        animation: mudarCor 5s infinite; /* Aplicando a animação "mudarCor" por 5 segundos, repetindo infinitamente */
+      }
+  
+      /* Definindo a animação "mudarCor" */
+      @keyframes mudarCor {
+        0% {
+          color: #3498db; /* Azul claro */
+        }
+        50% {
+          color: #e74c3c; /* Vermelho claro */
+        }
+        100% {
+          color: #2ecc71; /* Verde claro */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo">Olá, Mundo</h1>
+    <script>
+      var elementoTitulo = document.getElementById("titulo");
+      elementoTitulo.innerHTML = "Olá, Gpt--3.51";
+    </script>
+
+    <h2>Aqui estão os conceitos básicos sobre como o DOM funciona:</h2>
+    <p>
+      O DOM (Document Object Model) é uma representação hierárquica e
+      estruturada de um documento HTML ou XML, que pode ser manipulada por
+      linguagens de script, como JavaScript. O DOM representa a estrutura do
+      documento como uma árvore de objetos, onde cada nó na árvore representa um
+      elemento, atributo, texto ou qualquer outra parte do documento.
+    </p>
+    <li>1</li>
+    <ul>
+      <li>
+        Árvore de Documento: O DOM organiza o documento em uma árvore de
+        objetos. O nó superior é chamado de "nó de documento" e representa todo
+        o documento. Cada elemento, atributo, texto, etc., no documento é
+        representado por um nó na árvore.
+      </li>
+      <li>
+        Elementos e Atributos: Elementos HTML são representados por nós na
+        árvore. Atributos dos elementos são representados como propriedades dos
+        nós.
+      </li>
+      <li>
+        Manipulação com JavaScript: JavaScript é frequentemente usado para
+        interagir com o DOM e fazer alterações dinâmicas na página. Métodos como
+        getElementById, getElementsByClassName, querySelector, etc., são usados
+        para obter referências a elementos específicos no DOM.
+      </li>
+      <li>
+        Nós, Pais e Filhos: Cada nó no DOM pode ter "filhos" e "pais", exceto o
+        nó de documento que é o nó raiz. Os métodos como parentNode, childNodes,
+        firstChild, lastChild, etc., são usados para navegar pela árvore.
+      </li>
+      <li>
+        Atualização Dinâmica: JavaScript pode ser usado para modificar o
+        conteúdo, estrutura ou estilo do documento em tempo de execução. Por
+        exemplo, você pode adicionar, remover ou modificar elementos no DOM.
+      </li>
+      <p>
+        Neste exemplo, o JavaScript obtém uma referência ao elemento com o ID
+        "titulo" e, em seguida, modifica o conteúdo desse elemento usando a
+        propriedade innerHTML. Isso é apenas um exemplo simples; a manipulação
+        do DOM pode ser muito mais complexa, dependendo dos requisitos da
+        aplicação.
+      </p>
+    </ul>
+  
+  </body>
+</html>

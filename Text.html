@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        /* Estilo para o título h1 */
+        #text {
+          font-family: 'Arial', sans-serif;
+          animation: mudarCor 5s infinite; /* Aplicando a animação "mudarCor" por 5 segundos, repetindo infinitamente */
+        }
+  
+        /* Definindo a animação "mudarCor" */
+        @keyframes mudarCor {
+          0% {
+            color: #3498db; /* Azul claro */
+          }
+          50% {
+            color: #e74c3c; /* Vermelho claro */
+          }
+          100% {
+            color: #2ecc71; /* Verde claro */
+          }
+        }
+      </style>
+</head>
+<body>
+    <h1 id="text">Hello world!</h1>
+
+    <script>
+        var elementoText = document.getElementById("text");
+        elementoText.innerHTML = "<h1>Text</h1> ";
+    </script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat non, impedit quidem quaerat reprehenderit fuga illum? Vitae sint eveniet tenetur ratione pariatur cumque excepturi, corrupti quia? Veritatis, culpa fuga.</p>
+</body>
+</html>
